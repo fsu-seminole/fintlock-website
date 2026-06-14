@@ -13,6 +13,7 @@
   --sky-bright:#7CC4F0;   /* Fintley blue 2 */
   --maize:     #FFCB05;   /* lock accent */
   --cream:     #EBDFBE;   /* toned-down warm tint of the maize */
+  --gold:      #E4BE63;   /* muted gold for warm splash accents */
 
   /* Light surface system */
   --bg:        #FFFFFF;
@@ -198,7 +199,7 @@ body.nav-open .nav-toggle span:nth-child(3){ top:20px; transform: rotate(-45deg)
   border: 1px solid var(--line-sky);
   box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.06);
 }
-.device::after { content:""; position:absolute; top:20px; left:50%; transform:translateX(-50%); width:96px; height:22px; background:#0a1f36; border-radius:14px; }
+.device::after { content:""; position:absolute; top:20px; left:50%; transform:translateX(-50%); width:80px; height:22px; background:#0a1f36; border-radius:14px; }
 .device .screen {
   height: 100%; border-radius: 30px; overflow: hidden;
   background: radial-gradient(120% 80% at 50% 0%, #12365c, #0a1f38 70%);
@@ -209,25 +210,25 @@ body.nav-open .nav-toggle span:nth-child(3){ top:20px; transform: rotate(-45deg)
 .device .screen.splash { align-items: stretch; justify-content: flex-start; gap: 0; padding: 0; text-align: center; }
 
 /* iOS-style status bar */
-.splash-status { display: flex; justify-content: space-between; align-items: center; padding: 15px 22px 0; color: rgba(235,223,190,0.82); }
-.ss-time { font-family: var(--font-disp); font-weight: 600; font-size: 0.74rem; }
-.ss-icons { display: flex; align-items: center; gap: 6px; }
-.ss-i { height: 11px; width: auto; display: block; }
+.splash-status { display: flex; justify-content: space-between; align-items: center; padding: 16px 18px 0; color: rgba(235,223,190,0.82); }
+.ss-time { font-family: var(--font-disp); font-weight: 600; font-size: 0.72rem; }
+.ss-icons { display: flex; align-items: center; gap: 5px; }
+.ss-i { height: 10px; width: auto; display: block; }
 
 /* centered lockup */
 .splash-center { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 22px; }
 .splash-icon {
-  width: 80px; height: 80px; border-radius: 20px;
+  width: 80px; height: 80px; border-radius: 20px; overflow: hidden;
   display: grid; place-items: center; margin-bottom: 24px;
-  background: linear-gradient(158deg, #11335a, #0a2038);
-  border: 1px solid rgba(124,196,240,0.30);
-  box-shadow: 0 18px 32px -14px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.10);
+  background: #0B2540;
+  border: 1px solid rgba(235,223,190,0.30);
+  box-shadow: 0 18px 32px -14px rgba(0,0,0,0.6), inset 0 1px 0 rgba(235,223,190,0.18);
 }
-.splash-icon svg { width: 46px; height: 46px; }
+.splash-icon svg { width: 100%; height: 100%; }
 .splash-name { display: flex; flex-direction: column; align-items: center; line-height: 1; }
 .splash-the, .splash-app {
   font-family: var(--font-disp); font-weight: 600; font-size: 0.66rem;
-  letter-spacing: 0.42em; text-indent: 0.42em; text-transform: uppercase; color: var(--sky-bright);
+  letter-spacing: 0.42em; text-indent: 0.42em; text-transform: uppercase; color: var(--cream);
 }
 .splash-the { margin-bottom: 9px; }
 .splash-app { margin-top: 9px; opacity: 0.92; }
@@ -236,10 +237,8 @@ body.nav-open .nav-toggle span:nth-child(3){ top:20px; transform: rotate(-45deg)
 
 /* bottom band: loading bar + studio credit */
 .splash-bottom { display: flex; flex-direction: column; align-items: center; gap: 13px; padding: 0 22px 26px; }
-.splash-load { width: 110px; height: 4px; border-radius: 3px; background: rgba(124,196,240,0.16); overflow: hidden; position: relative; }
-.splash-load i { position: absolute; top: 0; left: -45%; height: 100%; width: 45%; border-radius: 3px; background: linear-gradient(90deg, var(--sky), var(--cream)); animation: splashLoad 1.9s var(--ease) infinite; }
-@keyframes splashLoad { 0% { left: -45%; } 62% { left: 100%; } 100% { left: 100%; } }
-@media (prefers-reduced-motion: reduce) { .splash-load i { animation: none; left: 0; width: 58%; } }
+.splash-load { width: 110px; height: 4px; border-radius: 3px; background: rgba(124,196,240,0.16); overflow: hidden; }
+.splash-load i { display: block; height: 100%; width: 60%; border-radius: 3px; background: linear-gradient(90deg, var(--cream), var(--gold)); }
 .splash-by { font-family: var(--font-disp); font-weight: 500; font-size: 0.9rem; color: var(--on-navy-muted); }
 .splash-mark { display: inline-flex; align-items: baseline; font-weight: 700; letter-spacing: -0.03em; color: var(--on-navy); }
 .splash-mark .lock-o { width: 0.6em; height: auto; align-self: center; transform: translateY(0.06em); margin: 0 0.01em; }

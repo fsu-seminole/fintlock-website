@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -49,11 +49,6 @@
               <a class="btn btn-primary" href="work.html">See our work <span class="arrow" aria-hidden="true">&rarr;</span></a>
               <a class="btn btn-ghost" href="contact.html">Get in touch</a>
             </div>
-            <div class="hero-meta">
-              <div><span class="k">3</span><span class="l">Products in development</span></div>
-              <div><span class="k">100%</span><span class="l">Native iOS, no web views</span></div>
-              <div><span class="k">0</span><span class="l">Ads or trackers</span></div>
-            </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
             <div class="device">
@@ -68,7 +63,7 @@
                 </div>
                 <div class="splash-center">
                   <div class="splash-icon">
-                    <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M28 50V37a22 22 0 0 1 44 0v13" fill="none" stroke="#FFCB05" stroke-width="11" stroke-linecap="round"/><circle cx="50" cy="63" r="23" fill="none" stroke="#FFCB05" stroke-width="12"/></svg>
+                    <svg viewBox="0 0 240 240" aria-hidden="true"><defs><linearGradient id="fiBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E7F0F6"/></linearGradient><linearGradient id="fiRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173E63"/><stop offset="1" stop-color="#0B2540"/></linearGradient><radialGradient id="fiGold" cx="0.36" cy="0.3" r="0.85"><stop offset="0" stop-color="#FFE694"/><stop offset="0.55" stop-color="#F2C440"/><stop offset="1" stop-color="#E0A41E"/></radialGradient><filter id="fiKey" x="-35%" y="-35%" width="170%" height="170%"><feMorphology in="SourceAlpha" operator="dilate" radius="6" result="d"/><feFlood flood-color="#FFFFFF" result="w"/><feComposite in="w" in2="d" operator="in" result="o"/><feMerge><feMergeNode in="o"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect x="6" y="6" width="228" height="228" rx="52" fill="#0B2540"/><g filter="url(#fiKey)"><g transform="translate(22,22) scale(0.8)"><rect x="54" y="104" width="132" height="106" rx="30" fill="url(#fiBody)" stroke="#0B2540" stroke-width="6"/><path d="M70 113 Q120 105 170 113" stroke="#fff" stroke-width="6" opacity="0.12" fill="none" stroke-linecap="round"/><path d="M120 60 L198 112 Q201 116 196 116 L44 116 Q39 116 42 112 Z" fill="url(#fiRoof)" stroke="#0B2540" stroke-width="6" stroke-linejoin="round"/><rect x="150" y="70" width="14" height="30" rx="3" fill="#E07A52" stroke="#0B2540" stroke-width="4"/><rect x="147" y="66" width="20" height="9" rx="3" fill="#B85C39" stroke="#0B2540" stroke-width="4"/><circle cx="160" cy="55" r="4" fill="#fff" opacity="0.9"/><circle cx="166" cy="45" r="5" fill="#fff" opacity="0.9"/><circle cx="173" cy="33" r="9" fill="url(#fiGold)" stroke="#0B2540" stroke-width="3.5"/><circle cx="173" cy="33" r="5" fill="none" stroke="#E0A41E" stroke-width="1.6"/><circle cx="90" cy="146" r="20" fill="#fff" stroke="#0B2540" stroke-width="4.5"/><circle cx="92.9" cy="147.7" r="10.4" fill="#0B2540"/><circle cx="84.8" cy="140.3" r="5.4" fill="#fff"/><circle cx="150" cy="146" r="20" fill="#fff" stroke="#0B2540" stroke-width="4.5"/><circle cx="152.9" cy="147.7" r="10.4" fill="#0B2540"/><circle cx="144.8" cy="140.3" r="5.4" fill="#fff"/><ellipse cx="73" cy="169" rx="6.5" ry="4.5" fill="#FF8073" opacity="0.5"/><ellipse cx="167" cy="169" rx="6.5" ry="4.5" fill="#FF8073" opacity="0.5"/><path d="M102 174 Q120 186 138 174" fill="none" stroke="#0B2540" stroke-width="6" stroke-linecap="round"/></g></g><path d="M196 43 L198.5 49.5 L205 52 L198.5 54.5 L196 61 L193.5 54.5 L187 52 L193.5 49.5 Z" fill="#F2C440"/><path d="M206 80 L207.7 84.3 L212 86 L207.7 87.7 L206 92 L204.3 87.7 L200 86 L204.3 84.3 Z" fill="#F2C440"/></svg>
                   </div>
                   <div class="splash-name">
                     <span class="splash-the">The</span>
@@ -84,28 +79,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Principles strip -->
-    <section class="strip on-navy">
-      <div class="wrap">
-        <div class="item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>
-          Swift &amp; SwiftUI
-        </div>
-        <div class="item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Privacy by default
-        </div>
-        <div class="item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 19l7-7a4 4 0 0 0-5.7-5.7L12 7.6 10.7 6.3A4 4 0 0 0 5 12z"/></svg>
-          Designed in-house
-        </div>
-        <div class="item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          Built in Florida
         </div>
       </div>
     </section>
@@ -235,6 +208,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
